@@ -1,0 +1,19 @@
+#given a string 'dna', remove all  N amd return the GC content
+
+
+def remove_n(dna):
+	dna=dna.replace('N', '')
+	gc=dna.count('G') +dna.count('C')
+	
+	total=len(dna)
+	print total
+	print gc
+	return gc/float(len(dna))
+
+dna = 'CAGCGTANCGTAGCNGATGCAGCATGNCGATGACGNNNGTAGC'
+dna2= 'CGATGNNNNNNN'
+dna3='GTGTGTGTGTGTGT'
+
+print remove_n(dna)
+print remove_n(dna2)
+print remove_n(dna3)

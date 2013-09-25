@@ -1,0 +1,5 @@
+def dna_starts_with(string, string1):
+	if string.startswith('string1'):
+		return TRUE
+	else:
+		return FALSE
